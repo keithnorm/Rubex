@@ -1,0 +1,20 @@
+#output
+  %h2 Matches
+  #match
+  
+  %h2 Captures
+  %ol#match_capture 
+#regex
+  %form{:method=>"POST", :action=>"/"}
+    %label Regex:
+    #regex_input_wrapper
+      %span< /
+      %input#regex_input{:name=>"regex"}><
+      %span /
+  
+  
+    #test_string_container
+      %label Test String
+      %textarea#test_string{:name=>"test_string"}
+  
+    

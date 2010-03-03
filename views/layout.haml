@@ -1,0 +1,12 @@
+!!! Strict
+%html
+  %head
+    %title ruby regex tester
+    %link{:rel=>"stylesheet", :type=>"text/css", :media=>"screen", :charset=>"utf-8", :href=>"/screen.css"}
+    %script{:src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :type=>"text/javascript"}
+    %script{:src=>"/javascripts/application.js", :type=>"text/javascript"}
+    
+  %body
+    #container
+      %h1 Rubex
+      = yield
