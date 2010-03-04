@@ -10,3 +10,175 @@
     #container
       %h1 Rubex
       = yield
+      
+      #quickref
+        %div{ :style => "float:left" }
+          
+          %h2 Quick Reference
+          
+          %table
+            %tr
+              %td
+                %code
+                  [abc]
+              %td
+                A single character: a, b or c
+            %tr
+              %td
+                %code
+                  [^abc]
+              %td
+                Any single character
+                %em
+                  but
+                a, b, or c
+            %tr
+              %td
+                %code
+                  [a-z]
+              %td
+                Any single character in the range a-z
+            %tr
+              %td
+                %code
+                  [a-zA-Z]
+              %td
+                Any single character in the range a-z or A-Z
+            %tr
+              %td
+                %code
+                  ^
+              %td
+                Start of line
+            %tr
+              %td
+                %code
+                  $
+              %td
+                End of line
+            %tr
+              %td
+                %code
+                  \\A
+              %td
+                Start of string
+            %tr
+              %td
+                %code
+                  \\z
+              %td
+                End of string
+        %div{ :style => "float:left" }
+          %table
+            %tr
+              %td
+                %code
+                  \.
+              %td
+                Any single character
+            %tr
+              %td
+                %code
+                  \\s
+              %td
+                Any whitespace character
+            %tr
+              %td
+                %code
+                  \\S
+              %td
+                Any non-whitespace character
+            %tr
+              %td
+                %code
+                  \\d
+              %td
+                Any digit
+            %tr
+              %td
+                %code
+                  \\D
+              %td
+                Any non-digit
+            %tr
+              %td
+                %code
+                  \\w
+              %td
+                Any word character (letter, number, underscore)
+            %tr
+              %td
+                %code
+                  \\W
+              %td
+                Any non-word character
+            %tr
+              %td
+                %code
+                  \\b
+              %td
+                Any word boundary character
+        %table
+          %tr
+            %td
+              %code
+                (...)
+            %td
+              Capture everything enclosed
+          %tr
+            %td
+              %code
+                (a|b)
+            %td
+              a or b
+          %tr
+            %td
+              %code
+                a?
+            %td
+              Zero or one of a
+          %tr
+            %td
+              %code
+                a*
+            %td
+              Zero or more of a
+          %tr
+            %td
+              %code
+                a+
+            %td
+              One or more of a
+          %tr
+            %td
+              %code
+                a{3}
+            %td
+              Exactly 3 of a
+          %tr
+            %td
+              %code
+                a{3,}
+            %td
+              3 or more of a
+          %tr
+            %td
+              %code
+                a{3,6}
+            %td
+              Between 3 and 6 of a
+        #regex_options{ :style => "text-align:center" }
+          %p
+            options:
+            %strong
+              i
+            case insensitive;
+            %strong
+              m
+            make dot match newlines;
+            %strong
+              x
+            ignore whitespace in regex;
+            %strong
+              o
+            perform \#{...} substitutions only once
