@@ -174,10 +174,12 @@ end
 module Bundler
   ENV_LOADED   = true
   LOCKED_BY    = '0.9.26'
-  FINGERPRINT  = "b46a2e55a87d5047e04b5abd3c79040000431236"
+  FINGERPRINT  = "dea8bdba7ce5c737d31a789d49f418a07ce2de67"
   HOME         = '/Users/Norman/.bundle/ruby/1.8/bundler'
-  AUTOREQUIRES = {:default=>[["sinatra", false]]}
+  AUTOREQUIRES = {:default=>[["haml", false], ["json", false], ["sinatra", false]]}
   SPECS        = [
+        {:load_paths=>["/Library/Ruby/Gems/1.8/gems/haml-3.0.13/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/haml-3.0.13.gemspec", :name=>"haml"},
+        {:load_paths=>["/Users/Norman/.bundle/ruby/1.8/gems/json-1.4.3/ext/json/ext", "/Users/Norman/.bundle/ruby/1.8/gems/json-1.4.3/ext", "/Users/Norman/.bundle/ruby/1.8/gems/json-1.4.3/lib"], :loaded_from=>"/Users/Norman/.bundle/ruby/1.8/specifications/json-1.4.3.gemspec", :name=>"json"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/rack-1.1.0.gemspec", :name=>"rack"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/sinatra-1.0.gemspec", :name=>"sinatra"},
       ].map do |hash|

@@ -1,14 +1,26 @@
 --- 
 dependencies: 
+  haml: 
+    group: 
+    - :default
+    version: ">= 0"
+  json: 
+    group: 
+    - :default
+    version: ">= 0"
   sinatra: 
     group: 
     - :default
     version: ">= 0"
 specs: 
+- haml: 
+    version: 3.0.13
+- json: 
+    version: 1.4.3
 - rack: 
     version: 1.1.0
 - sinatra: 
     version: "1.0"
-hash: b46a2e55a87d5047e04b5abd3c79040000431236
+hash: dea8bdba7ce5c737d31a789d49f418a07ce2de67
 sources: []
 
